@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AndroidAppShortcut</string>
+    <string name="open_gmail">Open Gmail</string>
+    <string name="launch_Hi_page">Launch Hi Page</string>
+    <string name="open_play_store">Open Play Store</string>
+    <string name="open_google_maps">Open Google Maps</string>
+    <string name="hi_page_description">This is Hi Page which is launch using shortcut tapping</string>
+    <string name="app_description_text">this is demo app to explore App Shortcuts with Long Press on App Icon</string>
+    <string name="open_linkedin">Open LinkedIn</string>
+    <string name="open_youtube">Open YouTube</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="youtube">YouTube</string>
 </resources>
