@@ -1,0 +1,47 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+            android:shortcutId="play_store"
+            android:enabled="true"
+            android:icon="@drawable/ic_play_store"
+            android:shortcutShortLabel="@string/open_play_store">
+        <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://play.google.com" />
+        <!--By the use of targetPackage and target class, any Activity of same app or other app could be opened-->
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="maps"
+        android:enabled="true"
+        android:icon="@drawable/ic_maps"
+        android:shortcutShortLabel="@string/open_google_maps">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="geo:0,0?q=37.423156,-122.084917"
+            android:targetPackage="com.google.android.apps.maps"
+            android:targetClass="com.google.android.maps.MapsActivity"/>
+        <!--By the use of targetPackage and target class, any Activity of same app or other app could be opened-->
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+            android:shortcutId="hello"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:shortcutShortLabel="@string/launch_Hi_page">
+        <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="io.gauravtak.androidappshortcut"
+                android:targetClass="io.gauravtak.androidappshortcut.HiActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>
